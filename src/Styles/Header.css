@@ -1,0 +1,6 @@
+.header-nav {
+    padding: 15px;
+    background-color: #274600; 
+    display: flex;
+    justify-content: flex-end
+}
