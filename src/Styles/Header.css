@@ -1,6 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background: #ffffff
+}
 .header-nav {
     padding: 15px;
-    background-color: #274600; 
-    display: flex;
-    justify-content: flex-end
+    align-self: center;
+}
+.navLink {
+    color: #274600;
+    text-decoration: none;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    font-family: "Markazi Text";
+    font-size: 18px;
+    font-weight: 600;
+    align-self: center;
 }

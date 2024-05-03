@@ -5,17 +5,23 @@ import Menu from "../Pages/Menu";
 import ReserveATable from "../Pages/ReserveATable";
 import AboutUs from "../Pages/AboutUs";
 import Login from "../Pages/Login";
+import logo from "../assets/Little-Lemon-Logo.png"
+
+
 
 function Header() {
     return (
         <div>
-            <nav className="header-nav">
-                <Link to={"/"} style={{color: "white", textDecoration: "none", paddingInlineStart: "10px", paddingInlineEnd: "10px"}}>Home</Link>
-                <Link to={"/menu"}>Menu</Link>
-                <Link to={"/reserve"}>Reserve a Table</Link>
-                <Link to={"/about"}>About Us</Link>
-                <Link to={"/login"}>Login</Link>
-            </nav>
+            <div className="header" >
+                <img src={logo} style={{height: "50px", margin: "15px"}} />
+                <nav className="header-nav">
+                    <Link className={"navLink"} to={"/"}>Home</Link>
+                    <Link className={"navLink"} to={"/menu"}>Menu</Link>
+                    <Link className={"navLink"} to={"/reserve"}>Reserve a Table</Link>
+                    <Link className={"navLink"} to={"/about"}>About Us</Link>
+                    <Link className={"navLink"} to={"/login"}>Login</Link>
+                </nav>
+            </div>
             <Routes>
                 <Route path="/" element={<Homepage/>}></Route>
                 <Route path="/menu" element={<Menu/>}></Route>
