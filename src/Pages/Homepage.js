@@ -1,3 +1,4 @@
+import "../Styles/Homepage.css"
 import BannerImage from "../assets/home_background_img.jpg";
 import OrganicVegImg from "../assets/organic-vegetables.webp";
 import CoffeeImg from "../assets/coffee.jpg";
@@ -7,31 +8,31 @@ import DeliveryImg from "../assets/delivery.jpg"
 function Homepage() {
     return (
         <>
-        <div style={{display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
-            <div style={{paddingLeft: "140px"}}>
-                <h1 style={{paddingTop: "33vh", color: "#274600", fontFamily: "Markazi Text", fontWeight: "700", fontSize: "40px"}}>Little Lemon</h1>
-                <h2 style={{color: "#e7a90a", textAlign: "end", fontFamily: "Markazi Text", fontSize: "30px"}}>Chicago</h2>
+        <div className="hero-section" >
+            <div className="title-div" >
+                <h1 className="title" >Little Lemon</h1>
+                <h2 className="subtext" >Chicago</h2>
             </div>
-            <img src={BannerImage} style={{height: "76vh", borderStyle: "solid", borderWidth: "7px", borderColor: "#e7a90a", borderRadius: "7px", marginTop: "30px", marginBottom: "20px"}}/>
+            <img className="banner-image" src={BannerImage} />
         </div>
-        <div style={{backgroundColor: "#274600", height: "60vh"}}>
-            <p style={{fontFamily: "sans-serif", fontSize: "25px", color: "white", textAlign: "center", paddingLeft: "220px", paddingRight: "220px", paddingTop: "25vh"}}>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+        <div className="info-section" >
+            <p className="info">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         </div>
-        <div style={{display: "flex", justifyContent: "center", paddingTop: "60px", paddingBottom: "60px"}}>
-            <div style={{width: "20%", textAlign: "center"}}>
-                <img src={OrganicVegImg} style={{height: "200px", width: "200px", objectFit: "cover", borderRadius: "100px", margin: "auto"}}/>
-                <h3>We Use Organic Vegetables</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div className="info-pics-section" >
+            <div className="info-pic-div" >
+                <img className="info-pic" src={OrganicVegImg} />
+                <h3 className="info-pic-title" >We Use Organic Vegetables</h3>
+                <p className="info-pic-text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div style={{width: "20%", textAlign: "center"}}>
-                <img src={CoffeeImg} style={{height: "200px", width: "200px", objectFit: "cover", borderRadius: "100px"}}/>
-                <h3>We Roast Our Own Coffee</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div className="info-pic-div" >
+                <img className="info-pic" src={CoffeeImg} />
+                <h3 className="info-pic-title" >We Roast Our Own Coffee</h3>
+                <p className="info-pic-text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div style={{width: "20%", textAlign: "center"}}>
-            <   img src={DeliveryImg} style={{height: "200px", width: "200px", objectFit: "cover", borderRadius: "100px"}}/>
-                <h3>We Deliver Your Favourit Dishes</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div className="info-pic-div" >
+                <img className="info-pic" src={DeliveryImg} />
+                <h3 className="info-pic-title" >We Deliver Your Favorite Dishes</h3>
+                <p className="info-pic-text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
         </>
